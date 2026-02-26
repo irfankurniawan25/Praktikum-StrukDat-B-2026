@@ -18,4 +18,5 @@ for kode, kurs in mata_uang.items():
         kurs_format = format(kurs, ',').replace(',', '.')
         data_tabel.append([kode, kurs_format])
     
+    
 tabel = (tabulate(data_tabel, headers=header, tablefmt='psql', colalign=('left', 'right')))
